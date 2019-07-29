@@ -2,6 +2,11 @@
 This is a little app that uses the world cities dataset (https://simplemaps.com/data/world-cities).
 Made by: Sam Beard
 
+## Requirements
+
+- PHP **5.4(?) or higher)**
+- SQLITE **3.0**
+
 ## Setup
 
 1) Clone this repo into a web accesable folder
