@@ -14,9 +14,10 @@ echo "Creating new database rda.db"
 sqlite3 rda.db <<EOF
 .output stdout
 .log stderr
-.print "importing models from $MODELS"
-.read $MODELS
-.print "Importing data from $DATA
+.print "importing models from $($MODELS)"
+.read $($MODELS)
+.print "Importing data from $($DATA)
 .mode csv
-.import $DATA cities
+.import $($DATA) cities
+.exit
 EOF
