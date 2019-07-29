@@ -14,6 +14,7 @@ EOF
 echo "Importing data from data/worldcities.csv"
 sqlite3 rda.db <<EOF
 .mode csv
+.echo ON
 .import .\data\worldcities.csv cities
 .schema cities
 EOF
