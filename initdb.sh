@@ -1,9 +1,7 @@
 #!/usr/bin/bash
 
-MODELS = "$PWD/src/sql/models.sql"
-DATA = "$PWD/data/worldcities.csv"
-
-
+models=src/sql/models.sql
+data=data/worldcities.csv
 
 # remove db
 echo "Removing database if exists"
@@ -14,10 +12,10 @@ echo "Creating new database rda.db"
 sqlite3 rda.db <<EOF
 .output stdout
 .log stderr
-.print "importing models from $($MODELS)"
-.read $($MODELS)
-.print "Importing data from $($DATA)
+.print "importing models from $models"
+.read $models
+.print "Importing data from $data
 .mode csv
-.import $($DATA) cities
+.import $data cities
 .exit
 EOF
