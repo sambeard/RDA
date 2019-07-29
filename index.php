@@ -7,9 +7,9 @@
 ?>
 <html>
 <head>
-
+    <script src="src/js/ajax_functions.js"></script>
 </head>
 <body>
-HI
+<div class="result"></div>
 </body>
 </html>
